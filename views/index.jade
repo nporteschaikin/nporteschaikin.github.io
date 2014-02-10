@@ -5,3 +5,12 @@ header#header
   h1 Noah Portes Chaikin
   h3 Web developer, compulsive biker, and coffee enthusiast.  New York City.
 div
+  section.page.about
+    div a
+  section.page.git
+    div
+      ul
+        - each repo in site.repositories
+          li
+            h1= repo.name
+            != repo.contents

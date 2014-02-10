@@ -2,8 +2,12 @@
 @import 'axis/animation'
 
 global-reset()
+normalize()
 base()
 
+*
+  box-sizing: border-box
+  
 body, html
   height: 100%
   
@@ -11,11 +15,10 @@ body
   > div
     absolute: top 100% left right
     z-index: 1
-    min-height: 100%
-    background: red
+    height: 100%
   
 header#header
-  width=700px
+  width=450px
   image-size=150px
   fixed: top 50% left 50%
   z-index: 0
@@ -28,3 +31,14 @@ header#header
     rounded()
     absolute: top left
     animation: fadeInUp 1s linear
+    
+.page
+  height: 100%
+  padding: base-margin * 2
+  > div
+    width: 1024px
+    margin: 0 auto
+  &.about
+    background: red
+  &.git
+    background: blue
