@@ -1,0 +1,26 @@
+{
+  "name": "nporteschaikin.github.io",
+  "version": "0.0.1",
+  "description": "Noah's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nporteschaikin/nporteschaikin.github.io.git"
+  },
+  "author": "Noah",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "gitHead": "701c495bba8087ebb144b7aceefc9778028e628b",
+  "bugs": {
+    "url": "https://github.com/nporteschaikin/nporteschaikin.github.io/issues"
+  },
+  "dependencies": {
+    "grate": "0.0.x",
+    "rupture": "0.0.x",
+    "autoprefixer-stylus": "0.0.3",
+    "axis-css": "0.2.x"
+  }
+}

@@ -1,21 +1,23 @@
-# roots v2.1.2
-# Files in this list will not be compiled - minimatch supported
-ignore_files: ['_*', 'readme*', '.gitignore', '.DS_Store']
-ignore_folders: ['.git']
+axis = module.require('axis-css') # axis css
+grate = module.require('grate') # a sweet grid, if you need it
+rupture = module.require('rupture') # some nice responding utilities
+autoprefixer = module.require('autoprefixer-stylus') #autoprefixing
 
-watcher_ignore_folders: ['components']
+# export these settings as a function. this is where the fun begins
+module.exports = 
+  ignore_files: ['_*', 'readme*', '.gitignore', '.DS_Store']
+  watcher_ignore_folders: ['components']
+  ignore_folders: ['.git', 'node_modules']
 
-# Layout file config
-# `default` applies to all views. Override for specific
-# views as seen below.
-layouts:
-  default: 'layout.jade'
-  # 'special_view.jade': 'special_layout.jade'
+  templates: 'views/templates'
 
-# Locals will be made available on every page. They can be
-# variables or (coffeescript) functions.
-locals:
-  title: 'Noah Portes Chaikin'
+  layouts:
+    default: 'layout.jade'
 
-# Precompiled template path, see http://roots.cx/docs/#precompile
-templates: 'views/templates'
+  locals:
+    title: 'Noah Portes Chaikin'
+
+  # these tols are now directly piped into your stylus toolchain
+  # also, a newer version of axis that doesn't ship w/ this version of roots
+  stylus:
+    plugins: [axis, grate, rupture]
