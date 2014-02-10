@@ -18,4 +18,4 @@ locals:
   title: 'Noah Portes Chaikin'
 
 # Precompiled template path, see http://roots.cx/docs/#precompile
-# templates: 'views/templates'
+templates: 'views/templates'
