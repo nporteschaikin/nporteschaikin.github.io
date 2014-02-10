@@ -9,7 +9,7 @@ require.config
     underscore: '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min'
     github: 'libs/github/github'
 
-require ['jquery', 'underscore', 'base64', 'github'], ($) ->
+require ['jquery', 'underscore', 'base64', 'github'], ($, _) ->
   $ ->
     
     # ------------------------------------------
