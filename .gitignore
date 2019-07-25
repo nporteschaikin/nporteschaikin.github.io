@@ -31,3 +31,6 @@ public/
 
 # Sessions folder
 sessions/
+
+# npm lockfile. Typically, I'd check this in.
+package-lock.json
